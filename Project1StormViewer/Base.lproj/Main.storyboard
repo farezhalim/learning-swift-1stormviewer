@@ -18,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" textLabel="u3E-ub-inI" style="IBUITableViewCellStyleDefault" id="D1W-mx-wQR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" textLabel="u3E-ub-inI" style="IBUITableViewCellStyleDefault" id="D1W-mx-wQR">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D1W-mx-wQR" id="8jq-bw-KXy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u3E-ub-inI">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -46,6 +46,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5E4-H7-YHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="800.79999999999995" y="39.130434782608695"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="dbI-fX-xLh">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="ogP-ca-44y" customClass="DetailViewController" customModule="Project1StormViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H79-DG-OOv"/>
+                        <viewControllerLayoutGuide type="bottom" id="S0Z-nP-R3u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hyu-CV-vJi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9R-6F-Z0u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O9R-6F-Z0u" firstAttribute="leading" secondItem="Hyu-CV-vJi" secondAttribute="leading" id="dIk-lR-utD"/>
+                            <constraint firstItem="O9R-6F-Z0u" firstAttribute="bottom" secondItem="S0Z-nP-R3u" secondAttribute="top" id="dZt-TH-jBS"/>
+                            <constraint firstItem="O9R-6F-Z0u" firstAttribute="top" secondItem="Hyu-CV-vJi" secondAttribute="top" id="pzB-xe-xgC"/>
+                            <constraint firstAttribute="trailing" secondItem="O9R-6F-Z0u" secondAttribute="trailing" id="rlD-ny-pTa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="O9R-6F-Z0u" id="RQK-T4-oiu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUT-4w-IBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631.2" y="32.833583208395808"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jRJ-1s-ubO">
