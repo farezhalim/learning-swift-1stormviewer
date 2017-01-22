@@ -1,10 +1,10 @@
-## Storm Viewer
+# Storm Viewer
 
 First project in the [Hacking With Swift](https://www.hackingwithswift.com/read/1/overview) series.
 
 This is an application that lets users scroll through a list of images, then select one to view.
 
-# Concepts learned
+## Concepts learned
 - constants and variables, 
 - method overrides, 
 - table views and image views, 
